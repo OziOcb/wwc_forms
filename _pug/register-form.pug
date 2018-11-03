@@ -1,7 +1,20 @@
-<div class="input-group mb-3">
-  <div class="input-group-prepend">
-    <span class="input-group-text" id="basic-addon1"><span class="far fa-address-book"></span></span>
-  </div>
-  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-</div>
+.wrapper
+  .wrapper__title Register Form
+
+  form.form(action="")
+    .form__group.form-group
+      label(for="reg-form__username").sr-only Username
+      .input-group
+        .input-group-prepend
+          .form__input-group-text.input-group-text
+            span.fas.fa-user
+        input.form__input.form-control(type="text" id="reg-form__username" aria-describedby="user name" placeholder="Username" required)
+
+    .form__group.form-group
+      label(for="reg-form__password").sr-only Password
+      .input-group
+        .input-group-prepend
+          .form__input-group-text.input-group-text
+            span.fas.fa-lock
+        input.form__input.form-control(type="password" id="reg-form__password" aria-describedby="user name" placeholder="Password" required)
 

@@ -11,15 +11,15 @@ description: Default Layouts description
 
   {% include header.html %}
 
-  <div class="row justify-content-around">
+  <div class="row justify-content-between">
     <div class="col">
 
       {% include register-form.html %}
 
     </div>
-    <div class="col">
+    <div class="col offset-1">
 
-      One of two columns
+      {% include register-form.html %}
 
     </div>
   </div>
