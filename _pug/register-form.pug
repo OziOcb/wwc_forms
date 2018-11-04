@@ -4,17 +4,69 @@
   form.form(action="")
     .form__group.form-group
       label(for="reg-form__username").sr-only Username
-      .input-group
+      .input.input-group
         .input-group-prepend
-          .form__input-group-text.input-group-text
+          .input__group-text.input-group-text
             span.fas.fa-user
-        input.form__input.form-control(type="text" id="reg-form__username" aria-describedby="user name" placeholder="Username" required)
+        input.input__input.form-control(type="text" id="reg-form__username" aria-describedby="user name" placeholder="Username" required)
 
     .form__group.form-group
       label(for="reg-form__password").sr-only Password
-      .input-group
+      .input.input-group
         .input-group-prepend
-          .form__input-group-text.input-group-text
+          .input__group-text.input-group-text
             span.fas.fa-lock
-        input.form__input.form-control(type="password" id="reg-form__password" aria-describedby="user name" placeholder="Password" required)
+        input.input__input.form-control(type="password" id="reg-form__password" aria-describedby="password" placeholder="Password" required)
 
+    .form__group.form-group
+      label(for="reg-form__conf-password").sr-only Confirm Password
+      .input.input-group
+        .input-group-prepend
+          .input__group-text.input-group-text
+            span.fas.fa-lock
+        input.input__input.form-control(type="password" id="reg-form__conf-password" aria-describedby="confirm password" placeholder="Confirm Password" required)
+
+    .form__group.form-group
+      label(for="reg-form__email").sr-only Email
+      .input.input-group
+        .input-group-prepend
+          .input__group-text.input-group-text
+            span.fas.fa-envelope
+        input.input__input.form-control(type="email" id="reg-form__email" aria-describedby="user emial" placeholder="Email" required)
+
+    .form__group.form-group
+      label(for="reg-form__location").sr-only Your Location
+      .input.input--select.input-group
+        .input-group-prepend
+          .input__group-text.input-group-text
+            span.fas.fa-map-marker-alt
+        select.input__input.form-control(id="reg-form__location" aria-describedby="user location" required)
+          option(value="Your Location") Your Location
+          option(value="Austria") Austria
+          option(value="Belgium") Belgium
+          option(value="Bulgaria") Bulgaria
+          option(value="Croatia") Croatia
+          option(value="Cyprus") Cyprus
+          option(value="Czech Republic") Czech Republic
+          option(value="Denmark") Denmark
+          option(value="Estonia") Estonia
+          option(value="Finland") Finland
+          option(value="France") France
+          option(value="Germany") Germany
+          option(value="Greece") Greece
+          option(value="Hungary") Hungary
+          option(value="Ireland") Ireland
+          option(value="Italy") Italy
+          option(value="Latvia") Latvia
+          option(value="Lithuania") Lithuania
+          option(value="Luxembourg") Luxembourg
+          option(value="Malta") Malta
+          option(value="Netherlands") Netherlands
+          option(value="Poland") Poland
+          option(value="Portugal") Portugal
+          option(value="Romania") Romania
+          option(value="Slovakia") Slovakia
+          option(value="Slovenia") Slovenia
+          option(value="Spain") Spain
+          option(value="Sweden") Sweden
+          option(value="United Kingdom*" selected) United Kingdom*
