@@ -34,7 +34,7 @@
             span.fas.fa-envelope
         input.input__input.form-control(type="email" id="reg-form__email" aria-describedby="user emial" placeholder="Email" required)
 
-    .form__group.form-group
+    .form__group.form__group--last.form-group
       label(for="reg-form__location").sr-only Your Location
       .input.input--select.input-group
         .input-group-prepend
@@ -70,3 +70,9 @@
           option(value="Spain") Spain
           option(value="Sweden") Sweden
           option(value="United Kingdom*" selected) United Kingdom*
+
+    .cbox.form-check
+      input.cbox__input.form-check-input(type="checkbox" value="" id="defaultCheck1")
+      label.cbox__label.form-check-label(for="defaultCheck1")
+        .cbox__visible-box
+        div I have read and accept the terms of use.
