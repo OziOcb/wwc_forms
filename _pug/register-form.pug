@@ -1,7 +1,7 @@
 .wrapper
   .wrapper__title Register Form
 
-  form.form(action="")
+  form.form(action="" method="post")
     .form__group.form-group
       label(for="reg-form__username").sr-only Username
       .input.input-group
@@ -41,7 +41,7 @@
           .input__group-text.input-group-text
             span.fas.fa-map-marker-alt
         select.input__input.form-control(id="reg-form__location" aria-describedby="user location" required)
-          option(value="Your Location") Your Location
+          option(value="") Your Location
           option(value="Austria") Austria
           option(value="Belgium") Belgium
           option(value="Bulgaria") Bulgaria
@@ -72,7 +72,7 @@
           option(value="United Kingdom*") United Kingdom*
 
     .cbox.form-check
-      input.cbox__input.form-check-input(type="checkbox" value="" id="defaultCheck1")
+      input.cbox__input.form-check-input(type="checkbox" required id="defaultCheck1")
       label.cbox__label.form-check-label(for="defaultCheck1")
         .cbox__visible-box
         div I have read and accept the terms of use.
